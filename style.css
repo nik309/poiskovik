@@ -6,6 +6,7 @@
 
 body {
     height: 100vh;
+    display: flex;
 }
 
 .search {
@@ -51,4 +52,35 @@ body {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+}
+@media screen and (min-width: 480px){
+    .search__select {
+        color: brown;
+    }
+    .search__button{
+        color: darkblue;
+    }
+}
+@media screen and (max-width: 360px) {
+    .search__select {
+        margin-top: 100px;
+        margin-left: 125px;
+        color: brown;
+       
+    }
+
+    .search__input {
+        width: 200px;
+        
+        
+      
+    }
+
+    .search__string{
+        position: absolute
+    }
+    .search__button{
+        color: darkblue;
+        font-size: 20px;
+    }
 }
